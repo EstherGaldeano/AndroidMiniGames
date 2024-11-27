@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Fire
+  - Boss
+  - EnemySword
   layers:
   - Default
   - TransparentFX
