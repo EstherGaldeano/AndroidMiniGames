@@ -8,6 +8,9 @@ TagManager:
   - Fire
   - Boss
   - EnemySword
+  - FlipperLeft
+  - FlipperRight
+  - PinballBall
   layers:
   - Default
   - TransparentFX
