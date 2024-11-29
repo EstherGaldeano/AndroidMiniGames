@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hud_gem_green_0: -9157780066960315567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

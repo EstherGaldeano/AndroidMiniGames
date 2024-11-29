@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alienYellow_duck_0: 4003665786787955396
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

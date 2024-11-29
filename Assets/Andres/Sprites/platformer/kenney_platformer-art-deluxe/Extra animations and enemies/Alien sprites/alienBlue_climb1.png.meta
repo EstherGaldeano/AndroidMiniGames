@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alienBlue_climb1_0: 2881606268218423817
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

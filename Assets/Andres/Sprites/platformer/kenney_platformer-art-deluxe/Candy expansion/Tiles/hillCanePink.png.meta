@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hillCanePink_0: -7508778163367545082
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

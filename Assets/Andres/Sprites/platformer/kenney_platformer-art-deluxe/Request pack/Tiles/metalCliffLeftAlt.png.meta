@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      metalCliffLeftAlt_0: 6214173193538632403
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

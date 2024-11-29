@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cookiePink_0: 4015576397745221756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

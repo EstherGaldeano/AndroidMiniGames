@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alienGreen_badge1_0: -6864463729696441482
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

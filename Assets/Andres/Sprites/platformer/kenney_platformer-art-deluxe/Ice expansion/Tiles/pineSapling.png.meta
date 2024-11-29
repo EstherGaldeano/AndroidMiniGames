@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pineSapling_0: -5166856348716295005
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

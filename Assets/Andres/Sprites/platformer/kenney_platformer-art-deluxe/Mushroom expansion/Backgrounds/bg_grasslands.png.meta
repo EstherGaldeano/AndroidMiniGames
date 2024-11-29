@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bg_grasslands_0: -5507410935237871940
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

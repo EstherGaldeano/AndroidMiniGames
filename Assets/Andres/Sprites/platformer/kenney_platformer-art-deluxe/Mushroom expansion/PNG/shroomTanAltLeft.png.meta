@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shroomTanAltLeft_0: -4178123575176048434
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

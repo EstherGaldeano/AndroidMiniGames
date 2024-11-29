@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sandCliffRightAlt_0: -56807706998751638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

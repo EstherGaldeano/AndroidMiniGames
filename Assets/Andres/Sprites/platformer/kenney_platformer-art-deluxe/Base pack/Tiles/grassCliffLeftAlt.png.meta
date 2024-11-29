@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grassCliffLeftAlt_0: -6022652714523642841
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

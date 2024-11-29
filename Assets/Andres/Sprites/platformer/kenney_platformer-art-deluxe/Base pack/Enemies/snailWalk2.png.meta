@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      snailWalk2_0: 1631046737135419804
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

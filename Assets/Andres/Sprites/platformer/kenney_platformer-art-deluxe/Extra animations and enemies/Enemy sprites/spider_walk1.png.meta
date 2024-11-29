@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spider_walk1_0: 5117586817173103992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

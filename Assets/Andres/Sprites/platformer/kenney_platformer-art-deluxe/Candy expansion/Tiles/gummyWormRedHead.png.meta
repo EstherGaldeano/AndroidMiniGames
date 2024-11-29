@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gummyWormRedHead_0: -7911571747758246567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

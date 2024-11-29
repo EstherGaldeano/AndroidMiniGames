@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      canePinkSmall_0: -6340101383841473595
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

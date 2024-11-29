@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      iceWaterDeepStars_0: -3480888627697373469
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

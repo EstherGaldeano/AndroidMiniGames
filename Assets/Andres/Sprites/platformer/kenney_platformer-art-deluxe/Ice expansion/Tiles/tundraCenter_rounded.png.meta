@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tundraCenter_rounded_0: -6758226264319902606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      signHangingCup_0: -1822123769374891683
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

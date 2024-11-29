@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      stemVine_0: -4103430033265709954
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      liquidLava_0: -662305906852028631
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

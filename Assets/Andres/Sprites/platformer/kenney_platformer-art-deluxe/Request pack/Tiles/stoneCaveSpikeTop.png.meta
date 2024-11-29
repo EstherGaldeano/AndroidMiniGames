@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      stoneCaveSpikeTop_0: -1738439954393108549
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

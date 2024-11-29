@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      snail_shell_0: -8969801523357219522
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

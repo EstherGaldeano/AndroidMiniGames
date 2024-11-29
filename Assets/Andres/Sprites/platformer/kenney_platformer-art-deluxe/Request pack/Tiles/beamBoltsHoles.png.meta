@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      beamBoltsHoles_0: 3784363325769679626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      raygunPurple_0: 2728742091422841882
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

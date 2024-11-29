@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      raygunBig_0: 3325712320208443135
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

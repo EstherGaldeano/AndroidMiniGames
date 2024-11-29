@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      stoneHillLeft2_0: 8063481827354279164
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

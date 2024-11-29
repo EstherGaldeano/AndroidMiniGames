@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      castleHalfMid_0: 7100926891166123551
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

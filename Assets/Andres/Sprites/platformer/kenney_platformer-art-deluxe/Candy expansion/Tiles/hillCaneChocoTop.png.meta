@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hillCaneChocoTop_0: 1559362840997835628
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

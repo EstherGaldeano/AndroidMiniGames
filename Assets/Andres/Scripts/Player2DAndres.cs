@@ -3,7 +3,7 @@ using UnityEngine;
 public class Player2DAndres : MonoBehaviour
 {
     [SerializeField]
-    private FloatingJoystick joystick;
+    private FixedJoystick joystick;
 
     [SerializeField]
     private float velocidad = 4;
@@ -95,6 +95,8 @@ public class Player2DAndres : MonoBehaviour
                 if (lifes <= 0)
                 {
                     uIAndresScript.timeActive = false;
+                    uIAndresScript.lasers.SetActive(false);
+                    this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
                     Invoke("GameOver", 2.0f);
                 }
             }
@@ -126,7 +128,6 @@ public class Player2DAndres : MonoBehaviour
                 if(lifes < 5)
                 {
                     lifes++;
-
                     uIAndresScript.PlayerLifesUI();
                 }                
             }
@@ -167,10 +168,9 @@ public class Player2DAndres : MonoBehaviour
 
     public void Fire()
     {
-        lasers.gameObject.transform.GetChild(posLaser).gameObject.transform.position = this.transform.position;
+        lasers.gameObject.transform.GetChild(posLaser).gameObject.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 0.4f, this.transform.position.z);
         Rigidbody2D rbLaser = lasers.gameObject.transform.GetChild(posLaser).gameObject.GetComponent<Rigidbody2D>();
         rbLaser.velocityY = velLaser;
-
 
         posLaser++;
 

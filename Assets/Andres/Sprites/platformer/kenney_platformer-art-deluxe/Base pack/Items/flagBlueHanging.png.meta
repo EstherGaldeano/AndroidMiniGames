@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flagBlueHanging_0: -3131382686775427552
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

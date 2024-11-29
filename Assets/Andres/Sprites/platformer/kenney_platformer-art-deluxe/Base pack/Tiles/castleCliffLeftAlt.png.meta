@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      castleCliffLeftAlt_0: -2354672431301978719
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

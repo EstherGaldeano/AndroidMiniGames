@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alienYellow_hurt_0: -7545060183570270127
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

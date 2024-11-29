@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      iceWaterDeep_0: 4488557895409683351
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

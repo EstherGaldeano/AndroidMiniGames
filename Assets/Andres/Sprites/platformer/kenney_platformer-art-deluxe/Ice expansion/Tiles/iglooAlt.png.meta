@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      iglooAlt_0: -2718726043295754172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

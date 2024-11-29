@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tundraHalf_0: 725609166526603907
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

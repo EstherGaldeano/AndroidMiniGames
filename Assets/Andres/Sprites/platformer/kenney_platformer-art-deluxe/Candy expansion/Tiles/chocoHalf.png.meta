@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chocoHalf_0: -3130049048803056392
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

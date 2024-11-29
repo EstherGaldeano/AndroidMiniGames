@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      barnacle_0: 2691655998432282992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

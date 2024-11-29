@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ladyBug_fly_0: 4310774375095262925
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slimeBlue_squashed_0: -6093378718414725311
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

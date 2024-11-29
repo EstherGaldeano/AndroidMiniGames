@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lollipopFruitYellow_0: -2360792552238495801
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

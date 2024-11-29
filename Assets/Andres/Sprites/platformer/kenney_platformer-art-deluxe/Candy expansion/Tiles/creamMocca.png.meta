@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      creamMocca_0: -6268152585079821803
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

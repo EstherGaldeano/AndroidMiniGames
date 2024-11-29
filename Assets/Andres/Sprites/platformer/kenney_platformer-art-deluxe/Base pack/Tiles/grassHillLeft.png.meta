@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grassHillLeft_0: -1088850045648716114
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

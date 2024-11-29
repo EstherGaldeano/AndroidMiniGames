@@ -27,10 +27,37 @@ public class UIAndres : MonoBehaviour
 
     [SerializeField]
     private GameObject gameOverPanel;
+    [SerializeField]
+    private GameObject startPanel;
+
+    public GameObject lasers;
 
     void Start()
     {
-        Time.timeScale = 1f;
+        if (PlayerPrefs.HasKey("Restarted"))
+        {            
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Restarted", 0);
+        }
+
+        if (PlayerPrefs.GetInt("Restarted") == 0)
+        {
+            Time.timeScale = 0.0f;
+
+            startPanel.SetActive(true);
+        }
+        else
+        {
+            Time.timeScale = 1.0f;
+
+            startPanel.SetActive(false);
+
+            PlayerPrefs.SetInt("Restarted", 0);
+        }
+
+        lasers.SetActive(true);
 
         timeCount = timeStart;
         pointsCount = pointsStart;
@@ -60,7 +87,7 @@ public class UIAndres : MonoBehaviour
         {
             PlayerPrefs.SetFloat("Time", 0.0f);
             timeRecord = PlayerPrefs.GetFloat("Time");
-        }
+        }        
     }
 
     void Update()
@@ -129,6 +156,15 @@ public class UIAndres : MonoBehaviour
 
     public void TryAgain()
     {
+        PlayerPrefs.SetInt("Restarted", 1);
+
         SceneManager.LoadScene("Andres_Game");
+    }
+
+    public void Play()
+    {
+        Time.timeScale = 1.0f;
+
+        startPanel.SetActive(false);
     }
 }

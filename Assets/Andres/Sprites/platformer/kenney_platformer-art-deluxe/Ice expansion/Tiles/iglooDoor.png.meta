@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      iglooDoor_0: -6700410192039363411
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

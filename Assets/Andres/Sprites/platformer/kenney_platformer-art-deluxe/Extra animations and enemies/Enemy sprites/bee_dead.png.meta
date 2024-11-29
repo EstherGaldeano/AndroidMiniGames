@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bee_dead_0: 3834552853981888287
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

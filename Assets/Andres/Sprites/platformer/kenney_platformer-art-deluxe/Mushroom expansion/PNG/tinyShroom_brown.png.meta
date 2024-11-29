@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tinyShroom_brown_0: 928502982127321879
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

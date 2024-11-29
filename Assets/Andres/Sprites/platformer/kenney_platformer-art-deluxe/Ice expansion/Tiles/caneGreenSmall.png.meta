@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      caneGreenSmall_0: 2734352506101744422
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tundraCliffRightAlt_0: 2881656833667490193
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

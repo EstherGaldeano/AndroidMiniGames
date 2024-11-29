@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tundraHillRight_0: -6237542104464716012
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

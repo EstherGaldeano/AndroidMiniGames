@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cakeHillRight_0: 7553860644199097140
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

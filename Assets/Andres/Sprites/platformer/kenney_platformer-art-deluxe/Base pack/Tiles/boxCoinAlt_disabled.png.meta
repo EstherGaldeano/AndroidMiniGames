@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      boxCoinAlt_disabled_0: 6974187906945405821
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
