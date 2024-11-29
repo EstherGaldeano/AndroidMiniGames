@@ -22,7 +22,8 @@ public class BallsControllerAndres : MonoBehaviour
     public int roundNumber;
     private int roundCounter;
 
-    private Vector3 lastDestroyedPosition;
+    public Vector3 lastDestroyedPosition;
+    private int lastDestroyedLifeRound;
 
     [SerializeField]
     private float forcePower;
@@ -40,7 +41,7 @@ public class BallsControllerAndres : MonoBehaviour
         roundNumber = 1;
         roundCounter = 0;
 
-        InvokeRepeating("SpawnsBalls1", 0.0f, 10.0f);
+        InvokeRepeating("SpawnsBalls1", 0.0f, 5.0f);
     }
 
     // Update is called once per frame
@@ -59,8 +60,8 @@ public class BallsControllerAndres : MonoBehaviour
 
         GameObject ballGameObject;
         ballGameObject = listBalls[0].gameObject.transform.GetChild(posBall1).gameObject;
-        ballGameObject.GetComponent<Collider2D>().enabled = false;
-        Invoke("ActivateCollider", 0.5f);
+        //ballGameObject.GetComponent<Collider2D>().enabled = false;
+        //Invoke("ActivateCollider", 0.5f);
         Rigidbody2D rb1 = ballGameObject.GetComponent<Rigidbody2D>();
         rb1.gravityScale = 1f;
         rb1.velocityX = 0;
@@ -77,15 +78,23 @@ public class BallsControllerAndres : MonoBehaviour
         }
 
         ballGameObject.GetComponent<BallsLifesAndres>().ballLife = roundNumber;
+        ballGameObject.GetComponent<BallsLifesAndres>().ballLifeRound = roundNumber;
+
         ballGameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = numberSprite[roundNumber];
 
         ballGameObject.transform.position = new Vector2(spawn.gameObject.transform.position.x, spawn.gameObject.transform.position.y);
 
-        forcePower = Random.Range(100.0f, 150.0f);
+        forcePower = Random.Range(75.0f, 100.0f);
 
         rb1.AddForce(new Vector2(forceDirection * forcePower, 0));
 
         roundCounter++;
+
+        posBall1++;
+        if (posBall1 >= listBalls[0].gameObject.transform.childCount)
+        {
+            posBall1 = 0;
+        }
     }
 
     public void SpawnsBalls2()
@@ -99,10 +108,11 @@ public class BallsControllerAndres : MonoBehaviour
         rb.velocityX = 0;
         rb.velocityY = 0;
 
-        ballGameObject.GetComponent<BallsLifesAndres>().ballLife = roundNumber;
-        ballGameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = numberSprite[roundNumber];
+        ballGameObject.GetComponent<BallsLifesAndres>().ballLife = lastDestroyedLifeRound;
+        ballGameObject.GetComponent<BallsLifesAndres>().ballLifeRound = lastDestroyedLifeRound;
+        ballGameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = numberSprite[lastDestroyedLifeRound];
 
-        ballGameObject.transform.position = new Vector2(lastDestroyedPosition.x, lastDestroyedPosition.y +0.75f);
+        ballGameObject.transform.position = new Vector2(lastDestroyedPosition.x, 2.0f);
 
         forcePower = Random.Range(100.0f, 150.0f);
 
@@ -123,10 +133,11 @@ public class BallsControllerAndres : MonoBehaviour
         rb2.velocityX = 0;
         rb2.velocityY = 0;
 
-        ballGameObject2.GetComponent<BallsLifesAndres>().ballLife = roundNumber;
-        ballGameObject2.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = numberSprite[roundNumber];
+        ballGameObject2.GetComponent<BallsLifesAndres>().ballLife = lastDestroyedLifeRound;
+        ballGameObject2.GetComponent<BallsLifesAndres>().ballLifeRound = lastDestroyedLifeRound;
+        ballGameObject2.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = numberSprite[lastDestroyedLifeRound];
 
-        ballGameObject2.transform.position = new Vector2(lastDestroyedPosition.x, lastDestroyedPosition.y + 0.75f);
+        ballGameObject2.transform.position = new Vector2(lastDestroyedPosition.x, 2.0f);
 
         forcePower = Random.Range(100.0f, 150.0f);
 
@@ -150,10 +161,10 @@ public class BallsControllerAndres : MonoBehaviour
         rb.velocityX = 0;
         rb.velocityY = 0;
 
-        ballGameObject.GetComponent<BallsLifesAndres>().ballLife = roundNumber;
-        ballGameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = numberSprite[roundNumber];
+        ballGameObject.GetComponent<BallsLifesAndres>().ballLife = lastDestroyedLifeRound;
+        ballGameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = numberSprite[lastDestroyedLifeRound];
 
-        ballGameObject.transform.position = new Vector2(lastDestroyedPosition.x, lastDestroyedPosition.y + 0.75f);
+        ballGameObject.transform.position = new Vector2(lastDestroyedPosition.x, 2.0f);
 
         forcePower = Random.Range(100.0f, 150.0f);
 
@@ -174,10 +185,10 @@ public class BallsControllerAndres : MonoBehaviour
         rb2.velocityX = 0;
         rb2.velocityY = 0;
 
-        ballGameObject2.GetComponent<BallsLifesAndres>().ballLife = roundNumber;
-        ballGameObject2.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = numberSprite[roundNumber];
+        ballGameObject2.GetComponent<BallsLifesAndres>().ballLife = lastDestroyedLifeRound;
+        ballGameObject2.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = numberSprite[lastDestroyedLifeRound];
 
-        ballGameObject2.transform.position = new Vector2(lastDestroyedPosition.x, lastDestroyedPosition.y + 0.75f);
+        ballGameObject2.transform.position = new Vector2(lastDestroyedPosition.x, 2.0f);
 
         forcePower = Random.Range(100.0f, 150.0f);
 
@@ -208,11 +219,20 @@ public class BallsControllerAndres : MonoBehaviour
 
     public void BallDestroyed(GameObject ball)
     {
+        this.gameObject.GetComponent<UIAndres>().WinPoints();
+
         ball.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, 0.0f);
         ball.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
 
-        lastDestroyedPosition = ball.gameObject.transform.position;
+        if(ball.gameObject.tag != "Ball3")
+        {
+            lastDestroyedPosition = ball.gameObject.transform.position;
+            lastDestroyedLifeRound = ball.gameObject.GetComponent<BallsLifesAndres>().ballLifeRound;
+        }
+        
         ball.gameObject.transform.position = ballsRespawn.gameObject.transform.position;
+
+        this.gameObject.GetComponent<PowerUpsAndres>().CheckSpawnPowerUp();       
 
         if (ball.gameObject.tag == "Ball1")
         {

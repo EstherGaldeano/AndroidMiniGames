@@ -3,6 +3,8 @@ using UnityEngine;
 public class BallsLifesAndres : MonoBehaviour
 {
     public int ballLife;
+    public int ballLifeRound;
+
 
     [SerializeField]
     private BallsControllerAndres ballsControllerAndresScript;

@@ -11,6 +11,10 @@ TagManager:
   - Ball1
   - Ball2
   - Ball3
+  - FlipperLeft
+  - FlipperRight
+  - PinballBall
+  - PowerUp
   layers:
   - Default
   - TransparentFX
