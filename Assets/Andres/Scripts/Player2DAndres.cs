@@ -31,6 +31,10 @@ public class Player2DAndres : MonoBehaviour
     [SerializeField]
     private GameObject powerUpsRespawn;
 
+    private float screenLeftLimit;
+    private float screenRightLimit;
+    private float playerWidth;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -43,6 +47,13 @@ public class Player2DAndres : MonoBehaviour
 
         powerUp1On = false;
         powerUp2On = false;
+
+        float halfScreenWidth = Camera.main.orthographicSize * Camera.main.aspect;
+
+        screenLeftLimit = Camera.main.transform.position.x - halfScreenWidth;
+        screenRightLimit = Camera.main.transform.position.x + halfScreenWidth;
+
+        playerWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
     }
 
     public void FirePowerUpOn()
@@ -65,6 +76,9 @@ public class Player2DAndres : MonoBehaviour
     void Update()
     {
         this.gameObject.transform.Translate(joystick.Horizontal*Time.deltaTime*velocidad, 0.0f, 0.0f);
+
+        float clampedX = Mathf.Clamp(transform.position.x, screenLeftLimit + playerWidth, screenRightLimit - playerWidth);
+        transform.position = new Vector3(clampedX, transform.position.y, transform.position.z);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -80,7 +94,8 @@ public class Player2DAndres : MonoBehaviour
 
                 if (lifes <= 0)
                 {
-                    Debug.Log("Has perdido");
+                    uIAndresScript.timeActive = false;
+                    Invoke("GameOver", 2.0f);
                 }
             }
         }
@@ -120,6 +135,12 @@ public class Player2DAndres : MonoBehaviour
             other.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.0f;
             other.gameObject.transform.position = powerUpsRespawn.gameObject.transform.position;
         }
+    }
+
+    public void GameOver()
+    {
+        Time.timeScale = 0.0f;
+        uIAndresScript.TimeRecord();
     }
 
     public void Invulnerable(float time)

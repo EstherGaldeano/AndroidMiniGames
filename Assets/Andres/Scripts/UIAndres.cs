@@ -1,17 +1,23 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class UIAndres : MonoBehaviour
 {
     private float timeStart = 0f;
     private float timeCount;
     public TMP_Text textTime;
-    private bool timeActive = true;
+    public bool timeActive = true;
 
     private int pointsStart = 0;
     private int pointsCount;
     public TMP_Text textPoints;
+
+    private int pointsRecord;
+    private float timeRecord;
+
+    public TMP_Text textPointsRecord;
+    public TMP_Text textTimeRecord;
 
     [SerializeField]
     private Player2DAndres player2DAndresScript;
@@ -19,11 +25,42 @@ public class UIAndres : MonoBehaviour
     [SerializeField]
     private GameObject[] heartsList;
 
+    [SerializeField]
+    private GameObject gameOverPanel;
+
     void Start()
     {
-        timeCount = timeStart;
+        Time.timeScale = 1f;
 
+        timeCount = timeStart;
         pointsCount = pointsStart;
+
+        pointsRecord = 0;
+        timeRecord = 0;
+
+        gameOverPanel.SetActive(false);
+
+        if (PlayerPrefs.HasKey("Record"))
+        {
+            pointsRecord = PlayerPrefs.GetInt("Record");
+            WinPointsRecord();
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Record", 0);
+            pointsRecord = PlayerPrefs.GetInt("Record");
+            WinPointsRecord();
+        }
+
+        if (PlayerPrefs.HasKey("Time"))
+        {
+            timeRecord = PlayerPrefs.GetFloat("Time");
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("Time", 0.0f);
+            timeRecord = PlayerPrefs.GetFloat("Time");
+        }
     }
 
     void Update()
@@ -35,7 +72,12 @@ public class UIAndres : MonoBehaviour
             if (textTime != null)
             {
                 textTime.text = FormatTime(timeCount);
+                textTimeRecord.text = FormatTime(timeRecord);
             }
+        }
+        if(timeRecord < timeCount)
+        {
+            timeRecord = timeCount;
         }
     }
 
@@ -46,10 +88,30 @@ public class UIAndres : MonoBehaviour
         return string.Format("{0:00}:{1:00}", min, sec);
     }
 
+    public void TimeRecord()
+    {
+        PlayerPrefs.SetFloat("Time", timeRecord);
+        gameOverPanel.SetActive(true);
+    }
+
     public void WinPoints()
     {
         pointsCount++;
         textPoints.text = "POINTS: " + pointsCount.ToString();
+
+        pointsRecord = PlayerPrefs.GetInt("Record");
+
+        if(pointsCount > pointsRecord)
+        {
+            PlayerPrefs.SetInt("Record", pointsCount);
+            pointsRecord = pointsCount;
+            WinPointsRecord();
+        }
+    }
+
+    public void WinPointsRecord()
+    {
+        textPointsRecord.text = pointsRecord.ToString();
     }
 
     public void PlayerLifesUI()
@@ -63,5 +125,10 @@ public class UIAndres : MonoBehaviour
         {
             heartsList[i].gameObject.SetActive(true);
         }
+    }
+
+    public void TryAgain()
+    {
+        SceneManager.LoadScene("Andres_Game");
     }
 }
