@@ -40,6 +40,7 @@ public class DamageControler : MonoBehaviour
         damageList[randomList].gameObject.transform.GetChild(roundRobinValue[randomList]).GetComponent<Rigidbody2D>().gravityScale = 0.2F;
 
         roundRobinValue[randomList]++;
+        
     }
 
 }
