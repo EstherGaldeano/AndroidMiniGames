@@ -11,6 +11,9 @@ TagManager:
   - FlipperLeft
   - FlipperRight
   - PinballBall
+  - Score10
+  - Score20
+  - LostDetector
   layers:
   - Default
   - TransparentFX
