@@ -32,16 +32,22 @@ public class BallsControllerAndres : MonoBehaviour
 
     public Sprite[] numberSprite;
 
+    [SerializeField]
+    private GameObject explosionBalls;
+    private int posExplosionBall;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        posExplosionBall = 0;
+
         posBall1 = 0;
         posBall2 = 0;
         posBall3 = 0;
         roundNumber = 1;
         roundCounter = 0;
 
-        InvokeRepeating("SpawnsBalls1", 0.0f, 5.0f);
+        InvokeRepeating("SpawnsBalls1", 0.0f, 7.5f);
     }
 
     // Update is called once per frame
@@ -220,6 +226,22 @@ public class BallsControllerAndres : MonoBehaviour
     public void BallDestroyed(GameObject ball)
     {
         this.gameObject.GetComponent<UIAndres>().WinPoints();
+
+        explosionBalls.transform.GetChild(posExplosionBall).transform.position = ball.transform.position;
+        explosionBalls.transform.GetChild(posExplosionBall).gameObject.SetActive(true);
+        posExplosionBall++;
+        if(posExplosionBall >= explosionBalls.gameObject.transform.childCount)
+        {
+            posExplosionBall = 0;
+        }
+        if(posExplosionBall >= 5)
+        {
+            explosionBalls.gameObject.transform.GetChild(posExplosionBall-5).gameObject.SetActive(false);
+        }
+        if(posExplosionBall < 5)
+        {
+            explosionBalls.gameObject.transform.GetChild(posExplosionBall + 5).gameObject.SetActive(false);
+        }
 
         ball.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0.0f, 0.0f);
         ball.gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.0f;

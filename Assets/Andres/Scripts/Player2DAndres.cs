@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class Player2DAndres : MonoBehaviour
 {
-    [SerializeField]
-    private FixedJoystick joystick;
+    //[SerializeField]
+    //private FixedJoystick joystick;
 
-    [SerializeField]
-    private float velocidad = 4;
+    //[SerializeField]
+    //private float velocidad = 4;
 
     public int lifes = 3;
 
@@ -31,9 +31,12 @@ public class Player2DAndres : MonoBehaviour
     [SerializeField]
     private GameObject powerUpsRespawn;
 
-    private float screenLeftLimit;
-    private float screenRightLimit;
-    private float playerWidth;
+    [SerializeField]
+    private GameObject explosion;
+
+    //private float screenLeftLimit;
+    //private float screenRightLimit;
+    //private float playerWidth;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -50,10 +53,10 @@ public class Player2DAndres : MonoBehaviour
 
         float halfScreenWidth = Camera.main.orthographicSize * Camera.main.aspect;
 
-        screenLeftLimit = Camera.main.transform.position.x - halfScreenWidth;
-        screenRightLimit = Camera.main.transform.position.x + halfScreenWidth;
+        //screenLeftLimit = Camera.main.transform.position.x - halfScreenWidth;
+        //screenRightLimit = Camera.main.transform.position.x + halfScreenWidth;
 
-        playerWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
+        //playerWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
     }
 
     public void FirePowerUpOn()
@@ -75,10 +78,10 @@ public class Player2DAndres : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.gameObject.transform.Translate(joystick.Horizontal*Time.deltaTime*velocidad, 0.0f, 0.0f);
+        //this.gameObject.transform.Translate(joystick.Horizontal*Time.deltaTime*velocidad, 0.0f, 0.0f);
 
-        float clampedX = Mathf.Clamp(transform.position.x, screenLeftLimit + playerWidth, screenRightLimit - playerWidth);
-        transform.position = new Vector3(clampedX, transform.position.y, transform.position.z);
+        //float clampedX = Mathf.Clamp(transform.position.x, screenLeftLimit + playerWidth, screenRightLimit - playerWidth);
+        //transform.position = new Vector3(clampedX, transform.position.y, transform.position.z);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -96,7 +99,10 @@ public class Player2DAndres : MonoBehaviour
                 {
                     uIAndresScript.timeActive = false;
                     uIAndresScript.lasers.SetActive(false);
+                    this.gameObject.GetComponent<Collider2D>().enabled = false;
                     this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                    explosion.gameObject.transform.position = this.gameObject.transform.position;
+                    explosion.gameObject.SetActive(true);
                     Invoke("GameOver", 2.0f);
                 }
             }
@@ -116,6 +122,8 @@ public class Player2DAndres : MonoBehaviour
             }
             if (other.gameObject.name == "PowerUp2")
             {
+                CancelInvoke("NotInvulnerable");
+
                 if (powerUp2On)
                 {
                     NotInvulnerable();
@@ -148,6 +156,8 @@ public class Player2DAndres : MonoBehaviour
     {
         invulnerable = true;
 
+        Debug.Log("Invulnerable");
+
         Invoke("NotInvulnerable", time);
 
         Color newColor = this.gameObject.GetComponent<SpriteRenderer>().color;
@@ -158,6 +168,8 @@ public class Player2DAndres : MonoBehaviour
     public void NotInvulnerable()
     {
         invulnerable = false;
+
+        Debug.Log("Not invulnerable");
 
         powerUp2On = false;
 
