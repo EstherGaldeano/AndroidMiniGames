@@ -267,6 +267,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dynamicJoystick: {fileID: 148401911}
   speed: 4
+  explosions: {fileID: 109783237}
+  playerBullets: {fileID: 1074653124}
 --- !u!1 &109783237
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +494,7 @@ GameObject:
   - component: {fileID: 157928998}
   - component: {fileID: 157928997}
   m_Layer: 0
-  m_Name: FirePlayer (4)
+  m_Name: FirePlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -821,7 +823,7 @@ GameObject:
   - component: {fileID: 448096924}
   - component: {fileID: 448096923}
   m_Layer: 0
-  m_Name: FirePlayer (1)
+  m_Name: FirePlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2891,7 +2893,7 @@ GameObject:
   - component: {fileID: 1180623542}
   - component: {fileID: 1180623541}
   m_Layer: 0
-  m_Name: FirePlayer (3)
+  m_Name: FirePlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4260,7 +4262,7 @@ GameObject:
   - component: {fileID: 1759983614}
   - component: {fileID: 1759983613}
   m_Layer: 0
-  m_Name: FirePlayer (2)
+  m_Name: FirePlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4584,7 +4586,7 @@ GameObject:
   - component: {fileID: 1929192086}
   - component: {fileID: 1929192085}
   m_Layer: 0
-  m_Name: FirePlayer (5)
+  m_Name: FirePlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     {
         roundRobinValue = 0;
         bulletRoundRobinValue = 0;
-        InvokeRepeating("Shoot",0.0f,1.0f);
+        //InvokeRepeating("shoot",0.0f,1.0f);
     }
 
     // Update is called once per frame
@@ -37,10 +37,10 @@ public class Player : MonoBehaviour
 
         bulletRoundRobinValue++;  
 
-        // if(bulletRoundRobinValue >= playerBullets.gameObject.transform.childCount){
+        if(bulletRoundRobinValue >= playerBullets.gameObject.transform.childCount){
 
-        //     bulletRoundRobinValue = 0;
-        // }
+            bulletRoundRobinValue = 0;
+        }
 
     }
 
@@ -54,7 +54,6 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other){
 
         if(other.gameObject.tag != "playerBullets"){
-
             explosions.gameObject.transform.GetChild(roundRobinValue).gameObject.transform.position = this.gameObject.transform.position;
             explosions.gameObject.transform.GetChild(roundRobinValue).gameObject.SetActive(true);
             Invoke("hideExplosion" , 0.3f);
@@ -64,7 +63,8 @@ public class Player : MonoBehaviour
                 roundRobinValue = 0;
             }
             
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
+             UnityEngine.Debug.Log("Aqui pierdes");
             // Destroy(this.gameObject);
 
         }

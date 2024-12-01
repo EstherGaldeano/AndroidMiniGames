@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Numerics;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
@@ -36,10 +37,16 @@ public class DamageControler : MonoBehaviour
     public void ChangePosition(){
         randomPositionX = Random.Range(leftLimit.gameObject.transform.position.x, rightLimit.gameObject.transform.position.x);
         randomList = Random.Range (0,damageList.Length);
-        damageList[randomList].gameObject.transform.GetChild(roundRobinValue[randomList]).gameObject.transform.position = new UnityEngine.Vector2(randomPositionX, leftLimit.gameObject.transform.position.y);
-        damageList[randomList].gameObject.transform.GetChild(roundRobinValue[randomList]).GetComponent<Rigidbody2D>().gravityScale = 0.2F;
+        GameObject damageItem = damageList[randomList];
+        GameObject damageChild = damageItem.gameObject.transform.GetChild(roundRobinValue[randomList]).gameObject;
+        damageChild.transform.position = new UnityEngine.Vector2(randomPositionX, leftLimit.gameObject.transform.position.y);
+        damageChild.GetComponent<Rigidbody2D>().gravityScale = 0.2F;
 
         roundRobinValue[randomList]++;
+
+        if(roundRobinValue[randomList] >= damageItem.gameObject.transform.childCount){
+                roundRobinValue[randomList] = 0;
+        }
         
     }
 
