@@ -8,14 +8,19 @@ TagManager:
   - Fire
   - Boss
   - EnemySword
+  - Ball1
+  - Ball2
+  - Ball3
   - FlipperLeft
   - FlipperRight
   - PinballBall
+  - PowerUp
+  - PlayerBullets
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - 
