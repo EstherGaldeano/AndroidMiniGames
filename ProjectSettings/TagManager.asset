@@ -15,6 +15,7 @@ TagManager:
   - FlipperRight
   - PinballBall
   - PowerUp
+  - PlayerBullets
   layers:
   - Default
   - TransparentFX
