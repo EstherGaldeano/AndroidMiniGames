@@ -56,7 +56,7 @@ public class DamageControler : MonoBehaviour
         GameObject damageChild = damageItem.gameObject.transform.GetChild(roundRobinValue[randomList]).gameObject;
         damageChild.transform.position = new UnityEngine.Vector2(randomPositionX, leftLimit.gameObject.transform.position.y);
         damageChild.GetComponent<Rigidbody2D>().velocity = UnityEngine.Vector2.zero;
-        damageChild.GetComponent<Rigidbody2D>().gravityScale = 0.2F;
+        damageChild.GetComponent<Rigidbody2D>().gravityScale = 0.1F;
 
         roundRobinValue[randomList]++;
 
