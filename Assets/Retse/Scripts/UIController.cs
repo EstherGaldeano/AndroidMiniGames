@@ -65,6 +65,14 @@ public class UIController : MonoBehaviour
         PlayerPrefs.SetInt("RECORD", 25);
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("_MainMenu");
+        }
+    }
+
     public void ShowGameOverPanel(){
 
         gameOverPanel.gameObject.SetActive(true);

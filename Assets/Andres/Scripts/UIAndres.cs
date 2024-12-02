@@ -92,6 +92,11 @@ public class UIAndres : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("_MainMenu");
+        }
+
         if (timeActive)
         {
             timeCount += Time.deltaTime;            
