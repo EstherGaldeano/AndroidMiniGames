@@ -3,41 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - Enemy
-  - Fire
-  - Boss
-  - EnemySword
-  - Ball1
-  - Ball2
-  - Ball3
-  - FlipperLeft
-  - FlipperRight
-  - PinballBall
-  - PowerUp
-  - PlayerBullets
-  - LostDetector
-  - Score10
-  - Score20
-  - Enemigo1
-  - MisilEnemigo
-  - Enemigo2
-  - Mina
-  - Tierra
-  - Enemigo3
-  - Asteroide
-  - Satelite
-  - EnemigoBoss
-  - AsteroideRed
-  - MisilPlayer
-  - Player2D
-  - Station
-  - Enemigo4
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Enemy
+  - 
   - Water
   - UI
   - 

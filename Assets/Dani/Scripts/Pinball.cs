@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.SceneManagement;
 
 public class Pinball : MonoBehaviour
 {
@@ -15,28 +16,34 @@ public class Pinball : MonoBehaviour
     private float force;
 
     [SerializeField]
-    private GameObject ButtonLeft;
+    private GameObject buttonLeft;
 
     [SerializeField]
-    private GameObject ButtonRight;
+    private GameObject buttonRight;
 
     [SerializeField]
-    private GameObject FlippLeft;
+    private GameObject flippLeft;
 
     [SerializeField]
-    private GameObject FlippRight;
+    private GameObject flippRight;
 
     [SerializeField]
-    private GameObject LostDetector;
+    private GameObject lostDetector;
 
     [SerializeField]
-    private GameObject GameStart;
+    private GameObject door;
 
     [SerializeField]
-    private GameObject GameOver;
+    private GameObject gameStart;
 
     [SerializeField]
-    private Transform CreationPoint;
+    private GameObject gameOver;
+
+    [SerializeField]
+    private Transform creationPoint;
+
+    [SerializeField]
+    private GameObject sounds;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -44,11 +51,11 @@ public class Pinball : MonoBehaviour
     {
         force = 20.0f;
         rbPinballBall = pinballBall.GetComponent<Rigidbody2D>();
-        GameStart.gameObject.SetActive(true);
+        gameStart.gameObject.SetActive(true);
   
 
         // Reposiciona la bola en el punto de inicio antes de lanzarla
-        pinballBall.transform.position = CreationPoint.position;
+        pinballBall.transform.position = creationPoint.position;
 
 
         
@@ -57,6 +64,8 @@ public class Pinball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {     
+
+        
 
 
     }
@@ -67,12 +76,12 @@ public class Pinball : MonoBehaviour
          {
              Debug.Log("Game Over");
             // Reposiciona la bola en el punto de inicio antes de lanzarla
-            pinballBall.transform.position = CreationPoint.position;
-
-            ButtonLeft.gameObject.SetActive(false);
-             ButtonRight.gameObject.SetActive(false);
-             GameOver.gameObject.SetActive(true);
-        }
+            pinballBall.transform.position = creationPoint.position;
+            door.GetComponent<Animator>().SetBool("Action", false);
+            buttonLeft.gameObject.SetActive(false);
+             buttonRight.gameObject.SetActive(false);
+             gameOver.gameObject.SetActive(true);
+         }
 
     }
 
@@ -80,12 +89,14 @@ public class Pinball : MonoBehaviour
 
     public void FlipperLeft()
     {
-        FlippLeft.GetComponent<Animator>().SetTrigger("Push");
+        flippLeft.GetComponent<Animator>().SetTrigger("Push");
+        sounds.gameObject.transform.GetChild(2).gameObject.GetComponent<AudioSource>().Play();
     }
 
     public void FlipperRight()
     {
-        FlippRight.GetComponent<Animator>().SetTrigger("Push");
+        flippRight.GetComponent<Animator>().SetTrigger("Push");
+        sounds.gameObject.transform.GetChild(2).gameObject.GetComponent<AudioSource>().Play();
     }
 
 
@@ -93,18 +104,18 @@ public class Pinball : MonoBehaviour
 
      public void StartGame()
      {
-         ButtonLeft.gameObject.SetActive(true);
-         ButtonRight.gameObject.SetActive(true);
-         GameOver.gameObject.SetActive(false);
-         GameStart.gameObject.SetActive(false);
+         buttonLeft.gameObject.SetActive(true);
+         buttonRight.gameObject.SetActive(true);
+         gameOver.gameObject.SetActive(false);
+         gameStart.gameObject.SetActive(false);
 
          // Reposiciona la bola en el punto de inicio antes de lanzarla
-         pinballBall.transform.position = CreationPoint.position;
+         pinballBall.transform.position = creationPoint.position;
 
 
          //Configuración para se aplique una fuerza al RigidBody de la bola para que salga impulsada hacia arriba al inicio de la partida
          rbPinballBall.AddForce(Vector2.up * force, ForceMode2D.Impulse);
-
+        sounds.gameObject.transform.GetChild(1).gameObject.GetComponent<AudioSource>().Play();
     }
 
 

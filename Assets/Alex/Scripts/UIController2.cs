@@ -39,7 +39,7 @@ public class UIController2 : MonoBehaviour
    }
    public void Reiniciar()
    {
-       SceneManager.LoadScene("Juego");
+       SceneManager.LoadScene("Alex_Game");
    }
    public void ActualizarPuntuacionUI(int puntos)
    {

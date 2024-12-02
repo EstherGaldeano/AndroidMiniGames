@@ -234,7 +234,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 56665281}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1518672072}
+        m_TargetAssemblyTypeName: UIController2, Assembly-CSharp
+        m_MethodName: Reiniciar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &56665281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6154,13 +6166,13 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 566604254}
   - {fileID: 2004419507}
   - {fileID: 1687403613}
   - {fileID: 1459829750}
   - {fileID: 957568996}
   - {fileID: 1062224356}
   - {fileID: 1525574723}
-  - {fileID: 566604254}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6730,7 +6742,7 @@ MonoBehaviour:
   fj: {fileID: 566604255}
   velocidad: 5
   explosiones: {fileID: 1152270955}
-  misilesPlayer: {fileID: 1576181591}
+  misilesPlayer: {fileID: 1663988448}
   sonidos:
   - {fileID: 1648392957}
   - {fileID: 1670094708}
@@ -8945,16 +8957,16 @@ MonoBehaviour:
   limiteI: {fileID: 2092314868}
   limiteD: {fileID: 1172081878}
   listadosObjetosDanyo:
-  - {fileID: 1296153541}
-  - {fileID: 521503765}
-  - {fileID: 1826401428}
-  - {fileID: 109991844}
-  - {fileID: 739242194}
-  - {fileID: 1116088213}
-  - {fileID: 1612792626}
-  - {fileID: 702577022}
-  - {fileID: 1558593583}
-  - {fileID: 1584373070}
+  - {fileID: 540284995}
+  - {fileID: 740254436}
+  - {fileID: 39323737}
+  - {fileID: 1939519435}
+  - {fileID: 1894950599}
+  - {fileID: 1171082205}
+  - {fileID: 1441041139}
+  - {fileID: 1707918566}
+  - {fileID: 1106185416}
+  - {fileID: 1850189237}
 --- !u!114 &1518672072
 MonoBehaviour:
   m_ObjectHideFlags: 0
