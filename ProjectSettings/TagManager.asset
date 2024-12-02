@@ -16,6 +16,10 @@ TagManager:
   - PinballBall
   - PowerUp
   - PlayerBullets
+  - LostDetector
+  - Score10
+  - Score20
+  - Flipper
   layers:
   - Default
   - TransparentFX
