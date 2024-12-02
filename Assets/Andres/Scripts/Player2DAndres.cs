@@ -151,8 +151,6 @@ public class Player2DAndres : MonoBehaviour
     {
         invulnerable = true;
 
-        Debug.Log("Invulnerable");
-
         Invoke("NotInvulnerable", time);
 
         Color newColor = this.gameObject.GetComponent<SpriteRenderer>().color;
@@ -163,8 +161,6 @@ public class Player2DAndres : MonoBehaviour
     public void NotInvulnerable()
     {
         invulnerable = false;
-
-        Debug.Log("Not invulnerable");
 
         powerUp2On = false;
 
