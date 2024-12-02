@@ -126,6 +126,8 @@ public class UIAndres : MonoBehaviour
         pointsCount++;
         textPoints.text = "POINTS: " + pointsCount.ToString();
 
+        player2DAndresScript.sounds[2].gameObject.GetComponent<AudioSource>().Play();
+
         pointsRecord = PlayerPrefs.GetInt("Record");
 
         if(pointsCount > pointsRecord)

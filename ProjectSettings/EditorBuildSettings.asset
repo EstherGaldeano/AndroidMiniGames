@@ -11,6 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Retse_Game.unity
     guid: dd109142be4dc08439c15fbd6f00f731
+  - enabled: 1
+    path: Assets/Scenes/Dani_Game.unity
+    guid: 322ae775eba77e84d868eeb82e7b0e16
+  - enabled: 1
+    path: Assets/Scenes/Andres_Game.unity
+    guid: a502424f984c8bb46b316894ee9ac203
+  - enabled: 1
+    path: Assets/Scenes/Alex_Game.unity
+    guid: d2f531abf7c34d245a1c92e189c4334c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

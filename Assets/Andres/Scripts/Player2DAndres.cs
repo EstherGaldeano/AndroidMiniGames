@@ -2,12 +2,6 @@ using UnityEngine;
 
 public class Player2DAndres : MonoBehaviour
 {
-    [SerializeField]
-    private FixedJoystick joystick;
-
-    [SerializeField]
-    private float velocidad = 4;
-
     public int lifes = 3;
 
     private bool invulnerable;
@@ -31,9 +25,13 @@ public class Player2DAndres : MonoBehaviour
     [SerializeField]
     private GameObject powerUpsRespawn;
 
-    private float screenLeftLimit;
-    private float screenRightLimit;
-    private float playerWidth;
+    [SerializeField]
+    private GameObject explosion;
+
+    public GameObject[] sounds;
+
+    public bool explosionSoundPlayed = false;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,17 +41,12 @@ public class Player2DAndres : MonoBehaviour
         velLaser = 15;
         posLaser = 0;
 
-        InvokeRepeating("Fire", 0.0f, 0.3f);
+        InvokeRepeating("Fire", 0.5f, 0.3f);
 
         powerUp1On = false;
         powerUp2On = false;
 
         float halfScreenWidth = Camera.main.orthographicSize * Camera.main.aspect;
-
-        screenLeftLimit = Camera.main.transform.position.x - halfScreenWidth;
-        screenRightLimit = Camera.main.transform.position.x + halfScreenWidth;
-
-        playerWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
     }
 
     public void FirePowerUpOn()
@@ -71,16 +64,6 @@ public class Player2DAndres : MonoBehaviour
         powerUp1On = false;
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
-        this.gameObject.transform.Translate(joystick.Horizontal*Time.deltaTime*velocidad, 0.0f, 0.0f);
-
-        float clampedX = Mathf.Clamp(transform.position.x, screenLeftLimit + playerWidth, screenRightLimit - playerWidth);
-        transform.position = new Vector3(clampedX, transform.position.y, transform.position.z);
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!invulnerable)
@@ -88,6 +71,9 @@ public class Player2DAndres : MonoBehaviour
             if (other.gameObject.tag == "Ball1" || other.gameObject.tag == "Ball2" || other.gameObject.tag == "Ball3")
             {
                 lifes--;
+
+                sounds[4].gameObject.GetComponent<AudioSource>().Play();
+
                 uIAndresScript.PlayerLifesUI();
 
                 Invulnerable(1.0f);
@@ -95,8 +81,20 @@ public class Player2DAndres : MonoBehaviour
                 if (lifes <= 0)
                 {
                     uIAndresScript.timeActive = false;
-                    uIAndresScript.lasers.SetActive(false);
+
+                    CancelInvoke("Fire");
+
+                    this.gameObject.GetComponent<Collider2D>().enabled = false;
                     this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                    explosion.gameObject.transform.position = this.gameObject.transform.position;
+                    explosion.gameObject.SetActive(true);
+
+                    if (!explosionSoundPlayed)
+                    {
+                        explosionSoundPlayed = true;
+                        sounds[3].gameObject.GetComponent<AudioSource>().Play();
+                    }
+
                     Invoke("GameOver", 2.0f);
                 }
             }
@@ -104,10 +102,13 @@ public class Player2DAndres : MonoBehaviour
 
         if (other.gameObject.tag == "PowerUp")
         {
+            sounds[1].gameObject.GetComponent<AudioSource>().Play();
+
             if (other.gameObject.name == "PowerUp1")
             {
                 if (powerUp1On)
                 {
+                    CancelInvoke("FirePowerUpStop");
                     FirePowerUpStop();
                 }
                 FirePowerUpOn();
@@ -116,6 +117,8 @@ public class Player2DAndres : MonoBehaviour
             }
             if (other.gameObject.name == "PowerUp2")
             {
+                CancelInvoke("NotInvulnerable");
+
                 if (powerUp2On)
                 {
                     NotInvulnerable();
@@ -171,6 +174,8 @@ public class Player2DAndres : MonoBehaviour
         lasers.gameObject.transform.GetChild(posLaser).gameObject.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 0.4f, this.transform.position.z);
         Rigidbody2D rbLaser = lasers.gameObject.transform.GetChild(posLaser).gameObject.GetComponent<Rigidbody2D>();
         rbLaser.velocityY = velLaser;
+
+        sounds[0].gameObject.GetComponent<AudioSource>().Play();
 
         posLaser++;
 
