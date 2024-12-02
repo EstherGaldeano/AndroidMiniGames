@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: 6cb963d5113c9c54c8b2d21cbc053f37
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7799094585410628808
+    second: asteroid-big-sprite_0
+  - first:
+      213: 7419593657111456070
+    second: asteroid-big-sprite_1
+  - first:
+      213: -4851068379757713381
+    second: asteroid-big-sprite_2
+  - first:
+      213: -6023562464255927150
+    second: asteroid-big-sprite_3
+  - first:
+      213: -3274303673023560849
+    second: asteroid-big-sprite_4
+  - first:
+      213: -4756165975087976637
+    second: asteroid-big-sprite_5
+  - first:
+      213: 1793946937954190795
+    second: asteroid-big-sprite_6
+  - first:
+      213: -238320682659518630
+    second: asteroid-big-sprite_7
+  - first:
+      213: 5847492341621671466
+    second: asteroid-big-sprite_8
+  - first:
+      213: 4546036505152312333
+    second: asteroid-big-sprite_9
+  - first:
+      213: -6284854643128652312
+    second: asteroid-big-sprite_10
+  - first:
+      213: -546731229163365910
+    second: asteroid-big-sprite_11
+  - first:
+      213: -8908989860517514618
+    second: asteroid-big-sprite_12
+  - first:
+      213: -1405525732998869834
+    second: asteroid-big-sprite_13
+  - first:
+      213: -8308675844083364022
+    second: asteroid-big-sprite_14
+  - first:
+      213: -6073025587319911413
+    second: asteroid-big-sprite_15
+  - first:
+      213: -4920835403827713464
+    second: asteroid-big-sprite_16
+  - first:
+      213: 4127725570529611122
+    second: asteroid-big-sprite_17
+  - first:
+      213: -8063022023045118695
+    second: asteroid-big-sprite_18
+  - first:
+      213: -4380299549152966381
+    second: asteroid-big-sprite_19
+  - first:
+      213: -6260743606468213798
+    second: asteroid-big-sprite_20
+  - first:
+      213: 2205117832535704831
+    second: asteroid-big-sprite_21
+  - first:
+      213: -6148656293533106094
+    second: asteroid-big-sprite_22
+  - first:
+      213: -5959105047019618967
+    second: asteroid-big-sprite_23
+  - first:
+      213: 6824346601789913100
+    second: asteroid-big-sprite_24
+  - first:
+      213: -7969821800054205579
+    second: asteroid-big-sprite_25
+  - first:
+      213: 5335254167000487668
+    second: asteroid-big-sprite_26
+  - first:
+      213: 2110611429116612990
+    second: asteroid-big-sprite_27
+  - first:
+      213: -3885890923110147222
+    second: asteroid-big-sprite_28
+  - first:
+      213: 8494447905208034098
+    second: asteroid-big-sprite_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: asteroid-big-sprite_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2639
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cca21d3433fb3c60800000000000000
+      internalID: 7799094585410628808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2549
+        width: 93
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649aed5de11b7f660800000000000000
+      internalID: 7419593657111456070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_2
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2459
+        width: 94
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b18696bb20b8dacb0800000000000000
+      internalID: -4851068379757713381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_3
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2367
+        width: 94
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c16ab5ad1086ca0800000000000000
+      internalID: -6023562464255927150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2275
+        width: 94
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f638caa48265f82d0800000000000000
+      internalID: -3274303673023560849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_5
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2183
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34fe412be34befdb0800000000000000
+      internalID: -4756165975087976637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2093
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5c8ae3c3165e810800000000000000
+      internalID: 1793946937954190795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2002
+        width: 96
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57637f0a9051bcf0800000000000000
+      internalID: -238320682659518630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1913
+        width: 99
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a264d29ad47762150800000000000000
+      internalID: 5847492341621671466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_9
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1823
+        width: 102
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d04df819d14c61f30800000000000000
+      internalID: 4546036505152312333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1734
+        width: 104
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed2a5b2006b7c8a0800000000000000
+      internalID: -6284854643128652312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1646
+        width: 106
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9da1208de9968f0800000000000000
+      internalID: -546731229163365910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1557
+        width: 106
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 682fb487ce8ec5480800000000000000
+      internalID: -8908989860517514618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1467
+        width: 108
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc8ee9eac19e7ce0800000000000000
+      internalID: -1405525732998869834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1376
+        width: 109
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4fca8f4757a1bc80800000000000000
+      internalID: -8308675844083364022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1285
+        width: 109
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c40f3976748bba0800000000000000
+      internalID: -6073025587319911413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1191
+        width: 109
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84aeeac954ea5bbb0800000000000000
+      internalID: -4920835403827713464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1098
+        width: 109
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27dc6b96980a84930800000000000000
+      internalID: 4127725570529611122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1006
+        width: 109
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9158e3490346a1090800000000000000
+      internalID: -8063022023045118695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 914
+        width: 109
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3190fe294cc0633c0800000000000000
+      internalID: -4380299549152966381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 823
+        width: 108
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad30aaa5cde5d19a0800000000000000
+      internalID: -6260743606468213798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 731
+        width: 107
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff48b284cf62a9e10800000000000000
+      internalID: 2205117832535704831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_22
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 640
+        width: 105
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2504df19da59baaa0800000000000000
+      internalID: -6148656293533106094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_23
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 549
+        width: 102
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d782d48810d4da0800000000000000
+      internalID: -5959105047019618967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 456
+        width: 99
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c08f4dfc313f4be50800000000000000
+      internalID: 6824346601789913100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_25
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 364
+        width: 94
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573da9c7c41856190800000000000000
+      internalID: -7969821800054205579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_26
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 272
+        width: 90
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f69c72c561aa0a40800000000000000
+      internalID: 5335254167000487668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_27
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 91
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71106b89e56a4d10800000000000000
+      internalID: 2110611429116612990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_28
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 181
+        width: 91
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6bda143bca821ac0800000000000000
+      internalID: -3885890923110147222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid-big-sprite_29
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 92
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2336cf04d5752e570800000000000000
+      internalID: 8494447905208034098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      asteroid-big-sprite_0: 7799094585410628808
+      asteroid-big-sprite_1: 7419593657111456070
+      asteroid-big-sprite_10: -6284854643128652312
+      asteroid-big-sprite_11: -546731229163365910
+      asteroid-big-sprite_12: -8908989860517514618
+      asteroid-big-sprite_13: -1405525732998869834
+      asteroid-big-sprite_14: -8308675844083364022
+      asteroid-big-sprite_15: -6073025587319911413
+      asteroid-big-sprite_16: -4920835403827713464
+      asteroid-big-sprite_17: 4127725570529611122
+      asteroid-big-sprite_18: -8063022023045118695
+      asteroid-big-sprite_19: -4380299549152966381
+      asteroid-big-sprite_2: -4851068379757713381
+      asteroid-big-sprite_20: -6260743606468213798
+      asteroid-big-sprite_21: 2205117832535704831
+      asteroid-big-sprite_22: -6148656293533106094
+      asteroid-big-sprite_23: -5959105047019618967
+      asteroid-big-sprite_24: 6824346601789913100
+      asteroid-big-sprite_25: -7969821800054205579
+      asteroid-big-sprite_26: 5335254167000487668
+      asteroid-big-sprite_27: 2110611429116612990
+      asteroid-big-sprite_28: -3885890923110147222
+      asteroid-big-sprite_29: 8494447905208034098
+      asteroid-big-sprite_3: -6023562464255927150
+      asteroid-big-sprite_4: -3274303673023560849
+      asteroid-big-sprite_5: -4756165975087976637
+      asteroid-big-sprite_6: 1793946937954190795
+      asteroid-big-sprite_7: -238320682659518630
+      asteroid-big-sprite_8: 5847492341621671466
+      asteroid-big-sprite_9: 4546036505152312333
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
